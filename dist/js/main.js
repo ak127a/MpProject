@@ -43,10 +43,7 @@ function foo() {
     document.getElementById("dataTable").innerHTML += t;
     tablesection.style.display = "block";
   } else {
-    tablesection.innerHTML = "Name not found";
+    tablesection.innerHTML += "Name not found";
     tablesection.style.display = "block";
   }
-
-  console.log("Button Clicked");
-  console.log(inputtedName);
 }
