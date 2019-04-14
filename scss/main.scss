@@ -78,7 +78,7 @@ input[type="text"] {
   }
 }
 
-input[type="submit"] {
+input[type="button"] {
   background: #3e3e3e;
   width: 50%;
   color: #fff;
@@ -122,8 +122,24 @@ button {
 }
 
 // JSON Data
-#json {
+#table {
   color: #fff;
-  font-size: 2rem;
   margin-top: 20px;
+  border: 1px solid #fff;
+  margin-top: 50px;
+  padding: 1rem;
+  justify-content: center;
+  justify-items: center;
+  border-radius: 0.5rem;
+  background: rgb(34, 34, 34);
+}
+
+table {
+  margin: 0 auto;
+}
+
+th,
+td {
+  padding: 0.1rem 1rem;
+  text-align: center;
 }
