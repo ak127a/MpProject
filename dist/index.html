@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Attendence System</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Julius+Sans+One"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header id="main-header">Attendance System</header>
+    <main class="main-container">
+      <div class="form-box">
+        <form>
+          Enter Your Name :<br /><input type="text" name="Name" /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      <p>OR</p>
+      <div class="btn-container">
+        <button type="button" onclick="alert('You pressed the button!')">
+          Check All Attendance
+        </button>
+      </div>
+    </main>
+    <section id="json"></section>
+    <script></script>
+    <script
+      async
+      defer
+      src="https://apis.google.com/js/api.js"
+      onload="this.onload=function(){};handleClientLoad()"
+      onreadystatechange="if (this.readyState === 'complete') this.onload()"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
