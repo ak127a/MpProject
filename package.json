@@ -2,7 +2,7 @@
   "name": "mpproject",
   "version": "1.0.0",
   "description": "Mp project Website",
-  "homepage": "https://ak127a.github.io/MpProject",
+  "homepage": "https://ak127a.github.io/mp_project",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/  --recursive",
