@@ -16,8 +16,12 @@
     <main class="main-container">
       <div class="form-box">
         <form>
-          Enter Your Name :<br /><input type="text" name="Name" /><br />
-          <input type="submit" value="Submit" />
+          Enter Your Name :<br /><input
+            id="name"
+            type="text"
+            name="Name"
+          /><br />
+          <input type="button" value="Submit" onclick="foo()" />
         </form>
       </div>
       <p>OR</p>
@@ -27,7 +31,14 @@
         </button>
       </div>
     </main>
-    <section id="json"></section>
+
+    <section id="tableSection">
+      <table BORDER="1" BORDERCOLOR="WHITE" id="dataTable">
+        <!-- fdsad   -->
+      </table>
+    </section>
+
+    <!-- SCRIPTS -->
     <script>
       var resultArray = null;
 
