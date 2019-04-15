@@ -9,17 +9,6 @@ document.getElementById("main-form").addEventListener("submit", function(e) {
   updateTable();
 });
 
-// TESTING
-
-function updateTable() {
-  console.log("Documnet loaded");
-
-  // newRow += "<div class='table-element'>Name</div>";
-  // newRow += "<div class='table-element'>" + 1 + "</div>";
-  // newRow += "<div class='table-element'>" + 2 + "</div>";
-  // newRow += "</div>";
-}
-
 function updateTable() {
   var enteredName = document.getElementById("name").value;
   var found = false;
@@ -42,7 +31,7 @@ function updateTable() {
 
     newRow = document.createElement("div");
     newRow.className = "table-row";
-    var itemname = null;
+    var itemname = "";
     for (var i = 0; i < 4; i++) {
       newElement = document.createElement("div");
       newElement.className = "table-element";
@@ -60,7 +49,7 @@ function updateTable() {
           itemname = resultArray[1][resultArray[1].length - 22];
           break;
       }
-
+      console.log(itemname);
       newElement.innerHTML = i;
       newRow.appendChild(newElement);
       tableContainer[0].appendChild(newRow);
