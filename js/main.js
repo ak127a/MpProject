@@ -62,7 +62,7 @@ function updateTable() {
       tableContainer[0].appendChild(newRow);
     }
   } else {
-    tableContainer.innerHTML = "Item Not Found";
+    tableContainer[0].innerHTML = "Item Not Found";
   }
 
   tablesection.style.display = "block";
