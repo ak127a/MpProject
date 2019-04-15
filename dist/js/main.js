@@ -28,9 +28,9 @@ function foo() {
     t += "<th>USN</th>";
     t += "<th>Name</th>";
     // Last Date
-    t += "<th>" + resultArray[1][resultArray[1].length - 5] + "</th>";
+    t += "<th>" + resultArray[1][resultArray[1].length - 20] + "</th>";
     // Last second date
-    t += "<th>" + resultArray[1][resultArray[1].length - 6] + "</th>";
+    t += "<th>" + resultArray[1][resultArray[1].length - 21] + "</th>";
     t += "</tr>";
     // Second ROW
     var tr = "<tr>";
