@@ -51,7 +51,8 @@ input[type="text"] {
   border-radius: 7px;
   border: 1.5px solid black;
   padding: 7px;
-  margin-top: 15px; }
+  margin-top: 15px;
+  width: 80%; }
   input[type="text"]:focus {
     outline: none; }
 
@@ -96,3 +97,9 @@ input[type="button"] {
   font-size: 1.2rem;
   border: 1px solid black;
   padding: 0.8rem 0; }
+
+@media (max-width: 670px) {
+  header {
+    font-size: 2.2rem; }
+  input[type="button"] {
+    width: 70%; } }
