@@ -14,6 +14,10 @@ function updateTable() {
   var found = false;
   var tableContainer = document.getElementsByClassName("table-container");
 
+  if (tableContainer[0].innerHTML != null) {
+    console.log("nothing there");
+  }
+
   for (var i = 3; i <= 7; i++) {
     if (resultArray[i][1] == enteredName) {
       found = true;
@@ -26,6 +30,11 @@ function updateTable() {
   if (found) {
     var newElement;
     var newRow;
+
+    // TESTING !!!!
+    if (tableContainer[0].innerHTML != null) {
+      tableContainer[0].innerHTML = null;
+    }
 
     console.log(tableContainer);
 
@@ -52,15 +61,17 @@ function updateTable() {
       console.log(itemname);
       newElement.innerHTML = itemname;
       newRow.appendChild(newElement);
-      tableContainer[0].appendChild(newRow);
+      // tableContainer[0].appendChild(newRow);
     }
+    tableContainer[0].appendChild(newRow);
     for (var i = 0; i < 4; i++) {
       newElement = document.createElement("div");
       newElement.className = "table-element";
       newElement.innerHTML = resultArray[foundIndex][i];
       newRow.appendChild(newElement);
-      tableContainer[0].appendChild(newRow);
+      // tableContainer[0].appendChild(newRow);
     }
+    tableContainer[0].appendChild(newRow);
   } else {
     tableContainer[0].innerHTML = "Item Not Found";
   }
