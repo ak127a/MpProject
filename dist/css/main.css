@@ -3,121 +3,96 @@ html {
   padding: 0; }
 
 body {
-  background: url("../images/bg1d.jpg");
+  background: url("../images/bg2.jpg");
   background-position: center;
-  overflow-x: hidden;
   background-repeat: no-repeat;
   height: 100vh;
+  margin: 0;
+  padding: 0;
   background-size: cover; }
 
+.header-container {
+  position: relative;
+  width: 100%; }
+
 header {
+  background: #ffffffe7;
   text-align: center;
-  color: #fff;
+  border-radius: 15px;
+  width: 70%;
+  color: black;
   font-family: "Julius Sans One", sans-serif;
   text-transform: uppercase;
-  transform: translate3d(100%, -100%, 0);
-  transition: all 0.8s ease-out;
   display: block;
-  margin-top: 30vh;
-  font-size: 3rem; }
+  padding: 30px;
+  margin-top: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 3.5rem; }
 
 .main-container {
-  border: 1px solid #fff;
-  margin-top: 50px;
-  padding: 1rem;
-  display: grid;
-  grid-template-areas: "entername or checkall";
-  border-radius: 0.5rem;
-  background: #222222; }
-
-p {
-  text-align: center;
-  color: #fff;
-  grid-area: "or";
-  font-size: 3rem;
-  font-family: "Julius Sans One", sans-serif; }
-
-.form-box {
-  display: flex;
-  grid-area: "entername";
-  justify-content: center;
-  align-items: center; }
+  width: 100%;
+  margin-top: 100px;
+  position: relative; }
 
 form {
-  color: #fff;
+  display: block;
+  width: 30%;
+  border-radius: 10px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.932);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.5rem;
+  color: black;
   text-align: center;
-  font-family: "Julius Sans One", sans-serif; }
+  margin: 0 auto; }
 
 input[type="text"] {
-  width: 100%;
-  padding: 10px 0px;
-  color: #fff;
-  border: 0.8px solid white;
-  background: #3e3e3e;
-  margin: 8px 0;
-  border-radius: 5px; }
+  border-radius: 7px;
+  border: 1.5px solid black;
+  padding: 7px;
+  margin-top: 15px; }
   input[type="text"]:focus {
     outline: none; }
 
 input[type="button"] {
-  background: #3e3e3e;
   width: 50%;
+  margin-top: 15px;
   color: #fff;
-  text-transform: uppercase;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 5px 0px;
-  margin-top: 5px;
-  border: 0.8px solid white;
-  -webkit-border-radius: 5px;
-  border-radius: 5px; }
+  border: none;
+  border-radius: 7px;
+  outline: none;
+  padding: 5px;
+  font-size: 1.2rem;
+  background: #636363; }
   input[type="button"]:focus {
-    background: #1f1f1f;
-    outline: 0 !important; }
-
-.btn-container {
-  display: flex;
-  grid-area: "checkall";
-  width: 100%;
-  justify-content: center;
-  align-items: center; }
-
-button {
-  background: #3e3e3e;
-  color: #fff;
-  text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  padding: 5px 5px;
-  width: 70%;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  font-size: 1.5rem;
-  border: 0.8px solid white; }
-  button:focus {
-    background: #1f1f1f;
-    outline: 0 !important; }
+    background: #3a3a3a; }
 
 #tableSection {
   color: #fff;
-  margin-top: 20px;
-  border: 1px solid #fff;
   margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
   padding: 1rem;
+  display: none;
   justify-content: center;
   justify-items: center;
   border-radius: 0.5rem;
-  background: #222222; }
+  background: rgba(34, 34, 34, 0.959); }
 
-table {
-  margin: 0 auto; }
+.table-row {
+  grid-area: row;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+  .table-row:nth-child(odd) .table-element {
+    font-weight: bold;
+    font-size: 1.4rem; }
 
-th,
-td {
-  padding: 0.1rem 1rem;
-  text-align: center; }
-
-@media (max-width: 670px) {
-  .main-container {
-    margin-top: 30px;
-    padding: 0.6rem;
-    grid-template-areas: "entername" "or" "checkall"; } }
+.table-element {
+  color: white;
+  text-align: center;
+  background: #303030;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  border: 1px solid black;
+  padding: 0.8rem 0; }

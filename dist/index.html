@@ -12,30 +12,33 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <header id="main-header">Attendance System</header>
+    <div class="header-container">
+      <header id="main-header">Attendance System</header>
+    </div>
     <main class="main-container">
-      <div class="form-box">
-        <form>
-          Enter Your Name :<br /><input
-            id="name"
-            type="text"
-            name="Name"
-          /><br />
-          <input type="button" value="Submit" onclick="foo()" />
-        </form>
-      </div>
-      <p>OR</p>
-      <div class="btn-container">
-        <button type="button" onclick="alert('You pressed the button!')">
-          Check All Attendance
-        </button>
-      </div>
+      <form id="main-form">
+        Enter Your Name :<br /><input id="name" type="text" name="Name" /><br />
+        <input type="button" value="Submit" onclick="updateTable()" />
+      </form>
     </main>
 
-    <section id="tableSection">
-      <table BORDER="1" BORDERCOLOR="WHITE" id="dataTable">
-        <!-- fdsad   -->
+    <!-- <section id="tableSection">
+      <table BORDER="BLACK" id="dataTable">
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
       </table>
+    </section> -->
+
+    <section id="tableSection">
+      <div class="table-container"></div>
     </section>
 
     <!-- SCRIPTS -->
