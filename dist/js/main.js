@@ -50,7 +50,7 @@ function updateTable() {
           break;
       }
       console.log(itemname);
-      newElement.innerHTML = i;
+      newElement.innerHTML = itemname;
       newRow.appendChild(newElement);
       tableContainer[0].appendChild(newRow);
     }
