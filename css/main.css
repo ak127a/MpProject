@@ -76,6 +76,7 @@ input[type="button"] {
   margin-right: 10px;
   padding: 1rem;
   display: none;
+  text-align: center;
   justify-content: center;
   justify-items: center;
   border-radius: 0.5rem;
@@ -98,7 +99,7 @@ input[type="button"] {
   border: 1px solid black;
   padding: 0.8rem 0; }
 
-@media (max-width: 670px) {
+@media (max-width: 700px) {
   header {
     font-size: 2.2rem; }
   input[type="button"] {

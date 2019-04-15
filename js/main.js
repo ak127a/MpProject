@@ -64,6 +64,9 @@ function updateTable() {
       // tableContainer[0].appendChild(newRow);
     }
     tableContainer[0].appendChild(newRow);
+
+    newRow = document.createElement("div");
+    newRow.className = "table-row";
     var tableContainer = document.getElementsByClassName("table-container");
     for (var i = 0; i < 4; i++) {
       newElement = document.createElement("div");
