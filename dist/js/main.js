@@ -74,7 +74,7 @@ function updateTable() {
       if (i == 2) {
         newElement.innerHTML = resultArray[foundIndex][date23];
       } else if (i == 3) {
-        newElement.innerHTML = resultArray[foundIndex][date23 - 1];
+        newElement.innerHTML = resultArray[foundIndex][date23 + 1];
       } else {
         newElement.innerHTML = resultArray[foundIndex][i];
       }
