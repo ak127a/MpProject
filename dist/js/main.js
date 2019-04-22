@@ -18,7 +18,7 @@ function updateTable() {
     console.log("nothing there");
   }
 
-  for (var i = 3; i <= 7; i++) {
+  for (var i = 3; i <= 8; i++) {
     if (resultArray[i][1].toLowerCase() == enteredName.trim().toLowerCase()) {
       found = true;
       foundIndex = i;
@@ -63,13 +63,21 @@ function updateTable() {
     }
     tableContainer[0].appendChild(newRow);
 
+    var date23 = resultArray[1].length - 14;
+
     newRow = document.createElement("div");
     newRow.className = "table-row";
     var tableContainer = document.getElementsByClassName("table-container");
     for (var i = 0; i < 4; i++) {
       newElement = document.createElement("div");
       newElement.className = "table-element";
-      newElement.innerHTML = resultArray[foundIndex][i];
+      if (i == 2) {
+        newElement.innerHTML = resultArray[foundIndex][date23];
+      } else if (i == 3) {
+        newElement.innerHTML = resultArray[foundIndex][date23 - 1];
+      } else {
+        newElement.innerHTML = resultArray[foundIndex][i];
+      }
       newRow.appendChild(newElement);
     }
     tableContainer[0].appendChild(newRow);
