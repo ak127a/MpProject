@@ -18,7 +18,7 @@ function updateTable() {
     console.log("nothing there");
   }
 
-  for (var i = 3; i <= 8; i++) {
+  for (var i = 3; i <= 7; i++) {
     if (resultArray[i][1].toLowerCase() == enteredName.trim().toLowerCase()) {
       found = true;
       foundIndex = i;
