@@ -51,10 +51,10 @@ function updateTable() {
           itemname = "Name";
           break;
         case 2:
-          itemname = resultArray[1][resultArray[1].length - 14];
+          itemname = resultArray[1][resultArray[1].length - 13];
           break;
         case 3:
-          itemname = resultArray[1][resultArray[1].length - 13];
+          itemname = resultArray[1][resultArray[1].length - 12];
           break;
       }
       console.log(itemname);
