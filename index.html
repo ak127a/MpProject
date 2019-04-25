@@ -33,7 +33,7 @@
       function makeApiCall() {
         var params = {
           // The ID of the spreadsheet to retrieve data from.
-          spreadsheetId: "15RChmLHTfliVKDI-jg0U9HlnEen9FQte7u8nWyJ7OZ0", // TODO: Update placeholder value.
+          spreadsheetId: "15RChmLHTfliVKDI-jg0U9HlnEen9FQte7u8nWyJ7OZ0",
 
           // The A1 notation of the values to retrieve.
           range: "Class 1" // TODO: Update placeholder value.
@@ -42,7 +42,6 @@
         var request = gapi.client.sheets.spreadsheets.values.get(params);
         request.then(
           function(response) {
-            // TODO: Change code below to process the `response` object:
             console.log(response.result.values);
             resultArray = response.result.values;
           },
@@ -53,12 +52,11 @@
       }
 
       function initClient() {
-        var API_KEY = "AIzaSyCTl88VlMbAgcuw1rHyYjgkf4zGPSZwHyg"; // TODO: Update placeholder with desired API key.
+        var API_KEY = "AIzaSyCTl88VlMbAgcuw1rHyYjgkf4zGPSZwHyg";
 
         var CLIENT_ID =
-          "10664250996-pihcdpkiok54iptrj9s0dm1529sdeoej.apps.googleusercontent.com"; // TODO: Update placeholder with desired client ID.
+          "10664250996-pihcdpkiok54iptrj9s0dm1529sdeoej.apps.googleusercontent.com";
 
-        // TODO: Authorize using one of the following scopes:
         //   'https://www.googleapis.com/auth/drive'
         //   'https://www.googleapis.com/auth/drive.file'
         //   'https://www.googleapis.com/auth/drive.readonly'

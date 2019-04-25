@@ -63,7 +63,7 @@ function updateTable() {
     }
     tableContainer[0].appendChild(newRow);
 
-    var date23 = resultArray[1].length - 14;
+    var date24 = resultArray[1].length - 13;
 
     newRow = document.createElement("div");
     newRow.className = "table-row";
@@ -72,9 +72,9 @@ function updateTable() {
       newElement = document.createElement("div");
       newElement.className = "table-element";
       if (i == 2) {
-        newElement.innerHTML = resultArray[foundIndex][date23];
+        newElement.innerHTML = resultArray[foundIndex][date24];
       } else if (i == 3) {
-        newElement.innerHTML = resultArray[foundIndex][date23 + 1];
+        newElement.innerHTML = resultArray[foundIndex][date24 + 1];
       } else {
         newElement.innerHTML = resultArray[foundIndex][i];
       }
